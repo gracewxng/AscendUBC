@@ -16,7 +16,9 @@ export default function Events() {
           {/* Navigation Bar */}
           <nav className="bg-white shadow-md py-4 px-6 flex justify-between items-center">
             <div className="flex items-center space-x-2">
-              <Image src="/ascend.png" alt="Ascend UBC" width={40} height={40} />
+                <Link href="/">
+                <Image src="/ascend.png" alt="Ascend UBC" width={150} height={100} className="cursor-pointer" />
+                </Link>
             </div>
             <ul className="hidden md:flex space-x-6 text-gray-700">
               {NAV_ITEMS.map((item) => (
@@ -41,16 +43,6 @@ export default function Events() {
         </div>
       </header>
 
-      {/* Event Filter Buttons */}
-      <section className="text-center py-6">
-        <div className="inline-flex space-x-3">
-          <button className="px-4 py-2 bg-yellow-400 text-white rounded-full">All</button>
-          <button className="px-4 py-2 bg-gray-300 text-gray-700 rounded-full">Networking</button>
-          <button className="px-4 py-2 bg-gray-300 text-gray-700 rounded-full">Workshop</button>
-          <button className="px-4 py-2 bg-gray-300 text-gray-700 rounded-full">Panel</button>
-        </div>
-      </section>
-
       {/* Events List */}
       <section className="px-6 py-8">
         {[1, 2, 3].map((event, index) => (
@@ -64,7 +56,6 @@ export default function Events() {
                 <span>📍 UBC Nest 2201</span>
               </div>
               <button className="px-4 py-2 bg-orange-500 text-white rounded-full">Apply</button>
-              <span className="flex items-center space-x-1 text-gray-600">👥 15 Spots Left</span>
             </div>
           </div>
         ))}

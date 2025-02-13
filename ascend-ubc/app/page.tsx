@@ -16,7 +16,9 @@ export default function Home() {
       {/* Navigation Bar */}
       <nav className="bg-white shadow-md py-4 px-6 flex justify-between items-center">
         <div className="flex items-center space-x-2">
-          <Image src="/ascend.png" alt="Ascend UBC" width={150} height={100} />
+          <Link href="/">
+            <Image src="/ascend.png" alt="Ascend UBC" width={150} height={100} className="cursor-pointer" />
+          </Link>
         </div>
         <ul className="hidden md:flex space-x-6 text-gray-700">
           {NAV_ITEMS.map((item) => (
