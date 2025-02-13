@@ -7,8 +7,7 @@ export default function Home() {
       {/* Navigation Bar */}
       <nav className="bg-white shadow-md py-4 px-6 flex justify-between items-center">
         <div className="flex items-center space-x-2">
-          <Image src="/logo.png" alt="Ascend UBC" width={40} height={40} />
-          <span className="text-xl font-bold">Ascend UBC</span>
+          <Image src="/ascend.png" alt="Ascend UBC" width={150} height={150} />
         </div>
         <ul className="hidden md:flex space-x-6 text-gray-700">
           <li><a href="#" className="hover:text-orange-500">Home</a></li>
@@ -23,7 +22,7 @@ export default function Home() {
       {/* Hero Section */}
       <header className="relative w-full h-[400px]">
         <Image 
-          src="/background.jpg"
+          src="/vancouver.jpg"
           alt="Vancouver Skyline"
           layout="fill"
           objectFit="cover"
