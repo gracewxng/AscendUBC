@@ -1,5 +1,14 @@
 'use client';
+import Link from 'next/link';
 import Image from 'next/image';
+
+const NAV_ITEMS = [
+  { name: 'Events', href: '/events' },
+  { name: 'Join us', href: '/' },
+  { name: 'Contact us', href: '/' },
+  { name: 'FAQs', href: '/' },
+  { name: 'Login', href: '/' },
+];
 
 export default function Home() {
   return (
@@ -7,15 +16,14 @@ export default function Home() {
       {/* Navigation Bar */}
       <nav className="bg-white shadow-md py-4 px-6 flex justify-between items-center">
         <div className="flex items-center space-x-2">
-          <Image src="/ascend.png" alt="Ascend UBC" width={150} height={150} />
+          <Image src="/ascend.png" alt="Ascend UBC" width={150} height={100} />
         </div>
         <ul className="hidden md:flex space-x-6 text-gray-700">
-          <li><a href="#" className="hover:text-orange-500">Home</a></li>
-          <li><a href="#" className="hover:text-orange-500">Events</a></li>
-          <li><a href="#" className="hover:text-orange-500">Join us</a></li>
-          <li><a href="#" className="hover:text-orange-500">Contact us</a></li>
-          <li><a href="#" className="hover:text-orange-500">FAQs</a></li>
-          <li><a href="#" className="hover:text-orange-500">Login</a></li>
+          {NAV_ITEMS.map((item) => (
+            <li key={item.name}>
+              <Link href={item.href}>{item.name}</Link>
+            </li>
+          ))}
         </ul>
       </nav>
       
@@ -64,6 +72,18 @@ export default function Home() {
             <a href="#" className="text-orange-500 mt-2 inline-block">Learn more →</a>
           </div>
         </div>
+      </section>
+
+      {/* Stay in Touch Section */}
+      <section className="py-16 bg-white text-center px-6">
+        <h2 className="text-3xl font-bold">Stay in Touch</h2>
+            <h3 className="font-semibold">Socials</h3>
+            <p className="text-gray-600">ascendubc@gmail.com</p>
+            <div className="flex justify-center space-x-4 mt-4">
+              <a href="#"><Image src="/instagram.svg" alt="Instagram" width={30} height={30} /></a>
+              <a href="#"><Image src="/facebook.svg" alt="Facebook" width={30} height={30} /></a>
+              <a href="#"><Image src="/linkedin.svg" alt="LinkedIn" width={30} height={30} /></a>
+            </div>
       </section>
     </div>
   );
