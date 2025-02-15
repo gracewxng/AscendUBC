@@ -47,7 +47,7 @@ export default function Events() {
       <section className="px-6 py-8">
         {[1, 2, 3].map((event, index) => (
           <div key={index} className="bg-gray-50 p-6 rounded-lg shadow-md mb-6 max-w-3xl mx-auto flex flex-col space-y-4">
-            <h3 className="text-lg font-semibold">Professional Networking Night</h3>
+            <h3 className="text-lg font-semibold text-black">Professional Networking Night</h3>
             <div className="flex justify-between items-center text-gray-600">
               <span>📅 2025-02-15 | 6:00 PM - 8:00 PM</span>
             </div>

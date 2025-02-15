@@ -39,46 +39,95 @@ export default function Home() {
           className="brightness-75"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
-          <h1 className="text-4xl font-bold">Connect<br /> Inspire, <span className="text-orange-500">Ascend</span></h1>
+          <h1 className="text-5xl font-bold">Connect<br /> Inspire, <span className="text-orange-500">Ascend</span></h1>
         </div>
       </header>
 
+      
+
       {/* What is Ascend */}
-      <section className="py-16 bg-white text-center px-6">
-        <h2 className="text-3xl font-bold">What is Ascend</h2>
-        <div className="flex justify-center space-x-4 my-6">
-          <span className="px-6 py-2 bg-yellow-400 text-white rounded-full">Network</span>
-          <span className="px-6 py-2 bg-orange-400 text-white rounded-full">Leadership</span>
-          <span className="px-6 py-2 bg-red-400 text-white rounded-full">Development</span>
+      <section className="py-16 bg-white px-6">
+        <h2 className="text-3xl font-bold text-black text-center">What is Ascend</h2>
+
+        <div className="mt-8 flex flex-col md:flex-row items-center md:items-start md:justify-center space-y-4 md:space-y-0 md:space-x-12">
+        {/* Left Side - Buttons */}
+          <div className="flex flex-col space-y-4">
+            <span className="px-6 py-3 bg-yellow-400 text-white font-semibold rounded-full text-lg shadow-md w-48 text-center">Network</span>
+            <span className="px-6 py-3 bg-orange-400 text-white font-semibold rounded-full text-lg shadow-md w-48 text-center">Leadership</span>
+            <span className="px-6 py-3 bg-red-400 text-white font-semibold rounded-full text-lg shadow-md w-48 text-center">Development</span>
+          </div>
+        {/* Right Side - Description */}
+          <div className="max-w-lg text-left text-gray-600">
+            <p>
+              This will be a blurb about who we are. blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
+            </p>
+          </div>
         </div>
-        <p className="max-w-3xl mx-auto text-gray-600">This will be a blurb about who we are. Blah blah blah blah blah...</p>
       </section>
 
+
       {/* Why Join */}
-      <section className="py-16 bg-gray-100 text-center px-6">
-        <h2 className="text-3xl font-bold">Why Join</h2>
-        <div className="flex flex-col md:flex-row justify-center space-x-0 md:space-x-6 mt-8">
-          <div className="bg-white p-6 rounded-lg shadow-md max-w-sm">
-            <h3 className="font-semibold">INTERNSHIP OPPORTUNITIES</h3>
-            <p className="text-gray-600">Blah blah blah about internships...</p>
-            <a href="#" className="text-orange-500 mt-2 inline-block">Learn more →</a>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md max-w-sm">
-            <h3 className="font-semibold">NETWORKING OPPORTUNITIES</h3>
-            <p className="text-gray-600">Blah blah blah about networking...</p>
-            <a href="#" className="text-orange-500 mt-2 inline-block">Learn more →</a>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md max-w-sm">
-            <h3 className="font-semibold">MENTORSHIP OPPORTUNITIES</h3>
-            <p className="text-gray-600">Blah blah blah about mentorship...</p>
-            <a href="#" className="text-orange-500 mt-2 inline-block">Learn more →</a>
-          </div>
-        </div>
-      </section>
+<section className="py-16 bg-gray-100 text-center px-6">
+  <h2 className="text-3xl font-bold text-black">Why Join</h2>
+
+  <div className="mt-8 flex flex-col md:flex-row justify-center gap-6">
+    {/* Card 1 - Internship Opportunities */}
+    <div className="bg-gray-200 rounded-2xl p-6 shadow-md max-w-sm flex flex-col items-center">
+      <h3 className="font-semibold text-lg text-black">INTERNSHIP OPPORTUNITIES</h3>
+      <div className="w-10 h-0.5 bg-black my-2"></div>
+      <p className="text-gray-700 text-sm text-center">
+        This will be a blurb about who we are. blah blah blah blah blah
+        blah blah blah blah blah blah blah blah ah blah blah blah
+        blah blah blah blah.
+      </p>
+      <a href="#" className="text-black mt-4 inline-flex items-center space-x-1">
+        <span>learn more</span>
+        <span>→</span>
+      </a>
+    </div>
+
+    {/* Card 2 - Networking Opportunities */}
+    <div className="bg-gray-200 rounded-2xl p-6 shadow-md max-w-sm flex flex-col items-center">
+      <h3 className="font-semibold text-lg text-black">NETWORKING OPPORTUNITIES</h3>
+      <div className="w-10 h-0.5 bg-black my-2"></div>
+      <p className="text-gray-700 text-sm text-center">
+        This will be a blurb about who we are. blah blah blah blah blah
+        blah blah blah blah blah blah blah blah ah blah blah blah
+        blah blah blah blah.
+      </p>
+      <a href="#" className="text-black mt-4 inline-flex items-center space-x-1">
+        <span>learn more</span>
+        <span>→</span>
+      </a>
+    </div>
+
+    {/* Card 3 - Mentorship Opportunities */}
+    <div className="bg-gray-200 rounded-2xl p-6 shadow-md max-w-sm flex flex-col items-center">
+      <h3 className="font-semibold text-lg text-black">MENTORSHIP OPPORTUNITIES</h3>
+      <div className="w-10 h-0.5 bg-black my-2"></div>
+      <p className="text-gray-700 text-sm text-center">
+        This will be a blurb about who we are. blah blah blah blah blah
+        blah blah blah blah blah blah blah blah ah blah blah blah
+        blah blah blah blah.
+      </p>
+      <a href="#" className="text-black mt-4 inline-flex items-center space-x-1">
+        <span>learn more</span>
+        <span>→</span>
+      </a>
+    </div>
+  </div>
+
+  {/* Icons Row */}
+  <div className="flex justify-center gap-12 mt-8">
+    <Image src="/briefcase-icon.svg" alt="Internship Icon" width={80} height={80} />
+    <Image src="/network-icon.svg" alt="Networking Icon" width={80} height={80} />
+    <Image src="/star-icon.svg" alt="Mentorship Icon" width={80} height={80} />
+  </div>
+</section>
 
       {/* Stay in Touch Section */}
       <section className="py-16 bg-white text-center px-6">
-        <h2 className="text-3xl font-bold">Stay in Touch</h2>
+        <h2 className="text-3xl font-bold text-black">Stay in Touch</h2>
             <h3 className="font-semibold">Socials</h3>
             <p className="text-gray-600">ascendubc@gmail.com</p>
             <div className="flex justify-center space-x-4 mt-4">
