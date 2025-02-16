@@ -5,9 +5,10 @@ import Image from 'next/image';
 const NAV_ITEMS = [
   { name: 'Events', href: '/events' },
   { name: 'Join us', href: '/' },
-  { name: 'Contact us', href: '/' },
-  { name: 'FAQs', href: '/' },
-  { name: 'Login', href: '/' },
+  { name: 'Partnerships', href: '/' },
+  { name: 'Contact us', href: '/contact' },
+  // { name: 'FAQs', href: '/' },
+  // { name: 'Login', href: '/' },
 ];
 
 export default function Home() {
@@ -36,7 +37,7 @@ export default function Home() {
           alt="Vancouver Skyline"
           layout="fill"
           objectFit="cover"
-          className="brightness-75"
+          className="brightness-75 opacity-80"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
           <h1 className="text-5xl font-bold">Connect<br /> Inspire, <span className="text-orange-500">Ascend</span></h1>
@@ -52,9 +53,9 @@ export default function Home() {
         <div className="mt-8 flex flex-col md:flex-row items-center md:items-start md:justify-center space-y-4 md:space-y-0 md:space-x-12">
         {/* Left Side - Buttons */}
           <div className="flex flex-col space-y-4">
-            <span className="px-6 py-3 bg-yellow-400 text-white font-semibold rounded-full text-lg shadow-md w-48 text-center">Network</span>
-            <span className="px-6 py-3 bg-orange-400 text-white font-semibold rounded-full text-lg shadow-md w-48 text-center">Leadership</span>
-            <span className="px-6 py-3 bg-red-400 text-white font-semibold rounded-full text-lg shadow-md w-48 text-center">Development</span>
+            <span className="px-6 py-3 bg-orange-400 text-white font-semibold rounded-full text-lg shadow-md w-48 text-center">Network</span>
+            <span className="px-6 py-3 bg-orange-300 text-white font-semibold rounded-full text-lg shadow-md w-48 text-center">Leadership</span>
+            <span className="px-6 py-3 bg-yellow-400 text-white font-semibold rounded-full text-lg shadow-md w-48 text-center">Development</span>
           </div>
         {/* Right Side - Description */}
           <div className="max-w-lg text-left text-gray-600">
@@ -117,23 +118,29 @@ export default function Home() {
     </div>
   </div>
 
-  {/* Icons Row */}
+  {/* Icons Row with Circles */}
   <div className="flex justify-center gap-12 mt-8">
-    <Image src="/briefcase-icon.svg" alt="Internship Icon" width={80} height={80} />
-    <Image src="/network-icon.svg" alt="Networking Icon" width={80} height={80} />
-    <Image src="/star-icon.svg" alt="Mentorship Icon" width={80} height={80} />
+    <div className="w-20 h-20 bg-orange-400 rounded-full flex items-center justify-center">
+      <Image src="/briefcase.png" alt="Internship Icon" width={40} height={40} />
+    </div>
+    <div className="w-20 h-20 bg-orange-300 rounded-full flex items-center justify-center">
+      <Image src="/group.png" alt="Networking Icon" width={40} height={40} />
+    </div>
+    <div className="w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center">
+      <Image src="/star.png" alt="Mentorship Icon" width={40} height={40} />
+    </div>
   </div>
-</section>
+  </section>
 
       {/* Stay in Touch Section */}
-      <section className="py-16 bg-white text-center px-6">
+      <section id="contact" className="py-16 bg-white text-center px-6">
         <h2 className="text-3xl font-bold text-black">Stay in Touch</h2>
-            <h3 className="font-semibold">Socials</h3>
-            <p className="text-gray-600">ascendubc@gmail.com</p>
-            <div className="flex justify-center space-x-4 mt-4">
-              <a href="#"><Image src="/instagram.svg" alt="Instagram" width={30} height={30} /></a>
-              <a href="#"><Image src="/facebook.svg" alt="Facebook" width={30} height={30} /></a>
-              <a href="#"><Image src="/linkedin.svg" alt="LinkedIn" width={30} height={30} /></a>
+            <h3 className="font-semibold text-gray-600 pt-6">Socials</h3>
+            <p className="text-gray-600 pt-4">ascendubc@gmail.com</p>
+            <div className="flex justify-center space-x-8 mt-4">
+              <a href="#"><Image src="/instagram.png" alt="Instagram" width={50} height={50} /></a>
+              <a href="#"><Image src="/facebook.png" alt="Facebook" width={50} height={50} /></a>
+              <a href="#"><Image src="/linkedin.png" alt="LinkedIn" width={50} height={50} /></a>
             </div>
       </section>
     </div>
