@@ -104,7 +104,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <label className="block text-black">Write a message</label>
+                <label className="block text-black">Write a message:</label>
                 <textarea name="message" value={formData.message} onChange={handleChange} required className="w-full border-b border-black bg-transparent outline-none py-2 h-24 text-black"></textarea>
               </div>
 
