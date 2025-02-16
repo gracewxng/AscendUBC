@@ -32,7 +32,7 @@ export default function Home() {
       </nav>
       
       {/* Hero Section */}
-      <header className="relative w-full h-[400px]">
+      <header className="relative w-full h-[600px]">
         <Image 
           src="/vancouver.jpg"
           alt="Vancouver Skyline"
@@ -41,7 +41,7 @@ export default function Home() {
           className="brightness-75 opacity-80"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
-          <h1 className="text-5xl font-bold">Connect<br /> Inspire, <span className="text-orange-500">Ascend</span></h1>
+          <h1 className="text-7xl font-bold">Connect,<br /> Inspire, <span className="text-orange-500">Ascend</span></h1>
         </div>
       </header>
 
