@@ -4,11 +4,14 @@ import Image from 'next/image';
 import { useState } from "react";
 
 const NAV_ITEMS = [
-  { name: 'Events', href: '/events' },
-  { name: 'Join us', href: '/' },
-  { name: 'Partnerships', href: '/' },
-  { name: 'Contact us', href: '/contact' }, // Updated to link to this page
-];
+    { name: 'Home', href: '/' },
+    { name: 'Events', href: '/events' },
+    { name: 'Join us', href: '/join' },
+    { name: 'Partnerships', href: '/' },
+    { name: 'Contact us', href: '/contact' },
+    // { name: 'FAQs', href: '/' },
+    // { name: 'Login', href: '/' },
+  ];
 
 export default function Contact() {
   const [formData, setFormData] = useState({

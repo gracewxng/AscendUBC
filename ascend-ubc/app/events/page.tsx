@@ -3,13 +3,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const NAV_ITEMS = [
-    { name: 'Events', href: '/events' },
-    { name: 'Join us', href: '/' },
-    { name: 'Partnerships', href: '/' },
-    { name: 'Contact us', href: '/' },
-    // { name: 'FAQs', href: '/' },
-    // { name: 'Login', href: '/' },
-  ];
+  { name: 'Home', href: '/' },
+  { name: 'Events', href: '/events' },
+  { name: 'Join us', href: '/join' },
+  { name: 'Partnerships', href: '/' },
+  { name: 'Contact us', href: '/contact' },
+  // { name: 'FAQs', href: '/' },
+  // { name: 'Login', href: '/' },
+];
 
 export default function Events() {
     return (
