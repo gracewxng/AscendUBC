@@ -55,7 +55,7 @@ export default function Home() {
         {/* Left Side - Buttons */}
           <div className="flex flex-col space-y-4">
             <span className="px-6 py-3 bg-orange-400 text-white font-semibold rounded-full text-lg shadow-md w-48 text-center">Network</span>
-            <span className="px-6 py-3 bg-orange-300 text-white font-semibold rounded-full text-lg shadow-md w-48 text-center">Leadership</span>
+            <span className="px-6 py-3 bg-yellow-500 text-white font-semibold rounded-full text-lg shadow-md w-48 text-center">Leadership</span>
             <span className="px-6 py-3 bg-yellow-400 text-white font-semibold rounded-full text-lg shadow-md w-48 text-center">Development</span>
           </div>
         {/* Right Side - Description */}
@@ -70,7 +70,7 @@ export default function Home() {
 
       {/* Why Join */}
 <section className="py-16 bg-gray-100 text-center px-6">
-  <h2 className="text-3xl font-bold text-black">Why Join</h2>
+  <h2 className="text-3xl font-bold text-black">More About Us</h2>
 
   <div className="mt-8 flex flex-col md:flex-row justify-center gap-6">
     {/* Card 1 - Internship Opportunities */}
@@ -83,8 +83,8 @@ export default function Home() {
         blah blah blah blah.
       </p>
       <a href="#" className="text-black mt-4 inline-flex items-center space-x-1">
-        <span>learn more</span>
-        <span>→</span>
+        {/* <span>learn more</span>
+        <span>→</span> */}
       </a>
     </div>
 
@@ -98,8 +98,8 @@ export default function Home() {
         blah blah blah blah.
       </p>
       <a href="#" className="text-black mt-4 inline-flex items-center space-x-1">
-        <span>learn more</span>
-        <span>→</span>
+        {/* <span>learn more</span>
+        <span>→</span> */}
       </a>
     </div>
 
@@ -113,8 +113,8 @@ export default function Home() {
         blah blah blah blah.
       </p>
       <a href="#" className="text-black mt-4 inline-flex items-center space-x-1">
-        <span>learn more</span>
-        <span>→</span>
+        {/* <span>learn more</span>
+        <span>→</span> */}
       </a>
     </div>
   </div>
@@ -124,7 +124,7 @@ export default function Home() {
     <div className="w-20 h-20 bg-orange-400 rounded-full flex items-center justify-center">
       <Image src="/briefcase.png" alt="Internship Icon" width={40} height={40} />
     </div>
-    <div className="w-20 h-20 bg-orange-300 rounded-full flex items-center justify-center">
+    <div className="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center">
       <Image src="/group.png" alt="Networking Icon" width={40} height={40} />
     </div>
     <div className="w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center">
@@ -137,7 +137,7 @@ export default function Home() {
       <section id="contact" className="py-16 bg-white text-center px-6">
         <h2 className="text-3xl font-bold text-black">Stay in Touch</h2>
             <h3 className="font-semibold text-gray-600 pt-6">Socials</h3>
-            <p className="text-gray-600 pt-4">ascendubc@gmail.com</p>
+            <p className="text-gray-600 pt-6">ascendubc@gmail.com</p>
             <div className="flex justify-center space-x-8 mt-4">
               <a href="#"><Image src="/instagram.png" alt="Instagram" width={50} height={50} /></a>
               <a href="#"><Image src="/facebook.png" alt="Facebook" width={50} height={50} /></a>
