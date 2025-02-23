@@ -8,6 +8,8 @@ const NAV_ITEMS = [
   { name: 'Join us', href: '/join' },
   { name: 'Partnerships', href: '/partnerships' },
   { name: 'Contact us', href: '/contact' },
+  // { name: 'FAQs', href: '/' },
+  // { name: 'Login', href: '/' },
 ];
 
 export default function Partnerships() {

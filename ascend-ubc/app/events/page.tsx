@@ -6,7 +6,7 @@ const NAV_ITEMS = [
   { name: 'Home', href: '/' },
   { name: 'Events', href: '/events' },
   { name: 'Join us', href: '/join' },
-  { name: 'Partnerships', href: '/' },
+  { name: 'Partnerships', href: '/partnerships' },
   { name: 'Contact us', href: '/contact' },
   // { name: 'FAQs', href: '/' },
   // { name: 'Login', href: '/' },
