@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Ascend UBC",
   description: "Connecting students with professional opportunities",
   icons: {
-    icon: "/ascend.png",
+    icon: "/favicon.ico",
   },
 };
 
