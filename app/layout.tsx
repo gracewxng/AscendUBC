@@ -15,7 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ascend UBC",
   description: "Connecting students with professional opportunities",
-  icons: "/favicon.ico", // This should match the filename
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
